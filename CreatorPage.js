@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import CreatorPicture from './CreatorPicture';
 import CreatorInfo from './CreatorInfo';
 import Confetti from './Confetti';
-import CreatorPieChart from './PieChart'; // Import the pie chart component
+import CreatorPieChart from './PieChart'; 
 
 const CreatorPage = () => {
     const [showConfetti, setShowConfetti] = useState(false);
 
     const handleBookMeClick = () => {
         setShowConfetti(true);
-        setTimeout(() => setShowConfetti(false), 3000); // Show confetti for 3 seconds
+        setTimeout(() => setShowConfetti(false), 3000); 
     };
 
     return (
