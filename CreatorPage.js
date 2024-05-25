@@ -3,13 +3,14 @@ import CreatorPicture from './CreatorPicture';
 import CreatorInfo from './CreatorInfo';
 import Confetti from './Confetti';
 import CreatorPieChart from './PieChart'; 
+import Active from './Active';
 
 const CreatorPage = () => {
     const [showConfetti, setShowConfetti] = useState(false);
 
     const handleBookMeClick = () => {
         setShowConfetti(true);
-        setTimeout(() => setShowConfetti(false), 3000); 
+        setTimeout(() => setShowConfetti(false), 3000); // Show confetti for 3 seconds
     };
 
     return (
