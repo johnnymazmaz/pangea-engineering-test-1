@@ -1,39 +1,212 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html, #root {
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Add overflow to the root element */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-container {
+    width: 100%;
+    min-height: 100vh; /* Use min-height to ensure it can grow taller than the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+    flex-direction: column;
+    overflow: auto; /* Ensure the container itself can scroll */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.creator-page {
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+    margin: auto;
+    background-color: #f0f2f5;
+    position: relative; /* Necessary for positioning elements */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure elements don't overflow the container */
+    padding-bottom: 20px; /* Add padding to the bottom */
 }
 
-.App-link {
-  color: #61dafb;
+.creator-chart-container {
+    display: flex;
+    flex-direction: column; /* Stack the chart and text vertically */
+    align-items: center; /* Center the content */
+    right: 200px;
+    margin-top: 20px; /* Add space above the chart */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.creator-chart {
+    display: flex;
+    justify-content: center;
+    transform: translateX(135%);
+    margin-bottom: 10px; /* Add space below the chart */
 }
+
+.creator-chart-text {
+    display: flex;
+    transform: translateX(180%);
+    font-size: 16px; /* Adjust the font size */
+    color: #333; /* Set the text color */
+}
+
+.blitz-header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center; /* Center the logo and distribute menu items */
+    align-items: center;
+    position: relative;
+}
+
+.blogo {
+    width: 200px;
+    height: auto;
+    
+}
+
+.header-line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+
+.creator-header {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center; /* Center align the text */
+}
+
+.creator-content {
+    display: flex;
+    padding: 50px;
+    margin-top: 0px;
+    justify-content: center; /* Center the content */
+}
+
+.creator-picture {
+    width: 260px;
+    height: 350px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.creator-info {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    line-height: 1;
+    width: 30%;
+    border: 5px solid black;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+    .creator-info p {
+        margin: 20px 0;
+    }
+.creator-info-live {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    line-height: 1.7;
+    width: 30%;
+    border: 5px solid black;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.creator-picture img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+    .menu-list li {
+        margin: 0 10px;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 20px;
+        background-color: black;
+        border-radius: 0px;
+        transition: background-color 0.3s ease;
+        border: 1px solid white;
+    }
+
+        .menu-list a:hover {
+            background-color: #555;
+        }
+
+.menu-left,
+.menu-right {
+    position: relative;
+    top: 10px;
+    transform: translateY(-40%);
+    
+}
+
+.menu-left {
+    left: 500px;
+    
+}
+
+.menu-right {
+    right: 500px;
+}
+
+.menu-login {
+    position: relative;
+    right: -500px;
+    bottom: -3px;
+    display: flex;
+    align-items: center;
+}
+
+.book-me-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    transform: translateX(487%); 
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .book-me-button:hover {
+        background-color: #555;
+    }
+
+
+
