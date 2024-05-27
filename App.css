@@ -36,16 +36,20 @@ body, html, #root {
     display: flex;
     flex-direction: column; /* Stack the chart and text vertically */
     align-items: center; /* Center the content */
+    right: 200px;
     margin-top: 20px; /* Add space above the chart */
 }
 
 .creator-chart {
     display: flex;
     justify-content: center;
+    transform: translateX(135%);
     margin-bottom: 10px; /* Add space below the chart */
 }
 
 .creator-chart-text {
+    display: flex;
+    transform: translateX(180%);
     font-size: 16px; /* Adjust the font size */
     color: #333; /* Set the text color */
 }
@@ -81,7 +85,7 @@ body, html, #root {
 
 .creator-content {
     display: flex;
-    padding: 15px;
+    padding: 50px;
     margin-top: 0px;
     justify-content: center; /* Center the content */
 }
@@ -99,14 +103,29 @@ body, html, #root {
 .creator-info {
     margin-left: 50px;
     margin-right: 50px;
+    padding: 20px;
     line-height: 1;
-    width: 35%;
-    border:5px solid black;
+    width: 30%;
+    border: 5px solid black;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
     .creator-info p {
-        margin: 10px 0;
+        margin: 20px 0;
     }
+.creator-info-live {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    line-height: 1.7;
+    width: 30%;
+    border: 5px solid black;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
 
 .creator-picture img {
     width: 300px;
@@ -176,6 +195,7 @@ body, html, #root {
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 18px;
+    transform: translateX(487%); 
     color: white;
     background-color: black;
     border: none;
@@ -188,11 +208,5 @@ body, html, #root {
         background-color: #555;
     }
 
-.status-circle {
-    width: 500px; /* Adjust the size as needed */
-    height: 500px; /* Adjust the size as needed */
-    border-radius: 50%; /* Make the circle */
-    background-color: green; /* Color for active status */
-    margin: 5px; /* Add some margin if needed */
-    display: inline-block; /* Ensure it displays inline */
-}
+
+

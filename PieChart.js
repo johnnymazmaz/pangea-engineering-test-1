@@ -1,8 +1,7 @@
 import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend } from 'recharts';
 
-
-    const data = [
+const data = [
     { name: 'X', value: 100000 },
     { name: 'Instagram', value: 500000 },
     { name: 'Tiktok', value: 2000000 },
@@ -12,7 +11,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28'];
 
 const CreatorPieChart = () => {
     return (
-        <PieChart width={400} height={400}>
+        <PieChart width={400} height={400} className="pie-chart">
             <Pie
                 data={data}
                 cx="50%"

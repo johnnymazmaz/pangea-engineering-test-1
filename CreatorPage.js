@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import CreatorPicture from './CreatorPicture';
-import CreatorInfo from './CreatorInfo';
+import CreatorInfo from './CreatorInfo'
+import CreatorInfoLive from './CreatorInfoLive';
 import Confetti from './Confetti';
 import CreatorPieChart from './PieChart'; 
-import Active from './Active';
 
 const CreatorPage = () => {
     const [showConfetti, setShowConfetti] = useState(false);
 
     const handleBookMeClick = () => {
         setShowConfetti(true);
-        setTimeout(() => setShowConfetti(false), 3000); // Show confetti for 3 seconds
+        setTimeout(() => setShowConfetti(false), 3000); /
     };
 
     return (
@@ -22,12 +22,13 @@ const CreatorPage = () => {
             <div className="creator-content">
                 <CreatorPicture />
                 <CreatorInfo />
+                <CreatorInfoLive/>
             </div>
             <div className="creator-chart-container">
                 <div className="creator-chart">
-                    <CreatorPieChart /> {/* Add the pie chart below the creator info */}
+                    <CreatorPieChart /> 
                 </div>
-                <p className="creator-chart-text">Percentage of following in different ranges</p> {/* Add the text below the pie chart */}
+                <p className="creator-chart-text">Percentage of following in different ranges</p>
             </div>
             <button className="book-me-button" onClick={handleBookMeClick}>
                 Book Me

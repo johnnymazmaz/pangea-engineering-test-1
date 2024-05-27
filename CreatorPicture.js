@@ -1,5 +1,5 @@
 import React from 'react';
-import creatorImage from './johndoe.png';
+import creatorImage from './LR.jpeg';
 
 const CreatorPicture = () => {
     return (
